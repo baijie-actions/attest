@@ -80035,6 +80035,7 @@ const createAttestation = async (subject, predicate, sigstoreInstance) => {
         predicateType: predicate.type,
         predicate: predicate.params,
         sigstore: sigstoreInstance,
+        skipWrite: core.getBooleanInput('skip-write'),
         token: core.getInput('github-token')
     });
     core.info(`Attestation created for ${subject.name}@${subjectDigest(subject)}`);

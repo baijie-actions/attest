@@ -128,6 +128,7 @@ const createAttestation = async (
     predicateType: predicate.type,
     predicate: predicate.params,
     sigstore: sigstoreInstance,
+    skipWrite: core.getBooleanInput('skip-write'),
     token: core.getInput('github-token')
   })
 

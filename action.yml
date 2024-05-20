@@ -45,6 +45,9 @@ inputs:
       the "subject-digest" parameter be specified. Defaults to false.
     default: false
     required: false
+  skip-write:
+    default: false
+    required: false
   github-token:
     description: >
       The GitHub token used to make authenticated API requests.
